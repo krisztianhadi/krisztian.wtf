@@ -37,8 +37,16 @@ input, button, textarea, select {
     font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    margin: 3rem 0 .5rem 0;
+}
+
+hr {
+    margin: 3rem 0 1.5rem 0;
+}
+
+p {
     margin: 1rem 0 .5rem 0;
 }
 
@@ -59,9 +67,6 @@ main {
     margin: 1.5rem 1rem;
 }
 
-hr {
-    margin: 1.5rem 0;
-}
 
 /*
   CSS Reset part is based on Josh's Custom CSS Reset, Thanks Josh for sharing <3
