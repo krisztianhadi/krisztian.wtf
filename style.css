@@ -24,10 +24,6 @@ body {
              "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-
-}
-
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -50,8 +46,14 @@ p {
     margin: 1rem 0 .5rem 0;
 }
 
-#root, #__next {
-    isolation: isolate;
+.caption {
+    opacity: .5;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    margin-top: 1rem;
 }
 
 wrapper {
@@ -66,9 +68,3 @@ main {
     max-width: 576px;
     margin: 1.5rem 1rem;
 }
-
-
-/*
-  CSS Reset part is based on Josh's Custom CSS Reset, Thanks Josh for sharing <3
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
