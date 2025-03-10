@@ -35,6 +35,7 @@ input, button, textarea, select {
 
 h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    text-wrap: balance;
     margin: 3rem 0 .5rem 0;
 }
 
@@ -46,14 +47,12 @@ p {
     margin: 1rem 0 .5rem 0;
 }
 
-.caption {
-    opacity: .5;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-}
-
 img {
     margin-top: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 wrapper {
@@ -67,4 +66,33 @@ wrapper {
 main {
     max-width: 576px;
     margin: 1.5rem 1rem;
+}
+
+main.cv h1, main.cv h2 {
+    margin: 0;
+}
+
+.caption {
+    opacity: .5;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+@media print {
+
+    /* Dedicated to the fine HR people who still love to print out CVs to take it to the conference room. If this makes their day better, I'm happy. Truly. */
+
+   body {
+    font-size: 14px;
+   }
+
+   page {
+    margin: 2cm;
+   }
+
+   p, li, h1, h2, h3, h4, h5, h6 {
+    break-inside: avoid;
+   }
+
+   
 }
