@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- LastPass x a11y - case study -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LastPass x a11y - Krisztián Hadi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Case study: overseeing an extensive accessibility overhaul at LastPass, pushing the platform's a11y rating up by more than 40%." />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2a1012" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2a1012" />
+
+</head>
+
+<body class="theme-lastpass">
+    <wrapper>
+        <main>
+            <h1>¬ LastPass x a11y ▓▒░</h1>
+            <h2>@ GoTo - 2021</h2>
+            <p><a href="index.html">&larr; back to home</a></p>
+
+            <section>
+                <h2>¬ Summary</h2>
+                <p>I had the chance to oversee an <strong>extensive accessibility overhaul at LastPass</strong> as the UX designer of a fast-reacting team. Together with a development team of five, we tackled a long list of accessibility violations and <strong>pushed the platform's a11y rating up by 14%</strong>.</p>
+            </section>
+
+            <section>
+                <h2>¬ Goal</h2>
+                <p>To help our sales team expand LastPass' clientele - especially in more regulated sectors like banking and insurance - we needed to improve the app's mediocre accessibility rating across the web/desktop app and browser extension.</p>
+            </section>
+
+            <section>
+                <h2>¬ Outcome</h2>
+                <p>Over two months of intensive front-end refactoring, we successfully pushed <strong>the a11y rating from ~69% to ~83%</strong> - a huge win for the user base. In real-world terms, <strong>the app became fully usable with assistive technologies</strong>.</p>
+                <p>This included full keyboard navigation, fully valid ARIA announcements, and the ever-popular classic: "every button became a real button" change.</p>
+                <p>And the real bonus? An <strong>Axe test became part of the E2E testing suite</strong> after our project.</p>
+                <p>For my enthusiasm and pushing the dev team to its limits (sorry guys for being a pain in the ass!), <strong>I was promoted into GoTo's* Accessibility Champion program</strong>, where I joined other champions in advocating a11y standards across the organization.</p>
+                <p><em>*GoTo, formerly LogMeIn, is the parent company of LastPass.</em></p>
+            </section>
+
+            <section>
+                <h2>¬ Takeaway</h2>
+                <p><code>div:onClick() != button</code></p>
+                <p>Just because something can be clicked doesn't mean it's a valid navigation element - and most assistive technology treats it that way. These "fake" buttons and links are either nonexistent to screen readers or reduced to plain text.</p>
+                <p>Always pay attention to using the appropriate element for every UI block in your website or app. Most compatibility issues are fully covered by following valid code schematics.</p>
+                <p>It's shocking how many people assume everyone has full sensory and fine-motor function, but in reality, accessibility issues affect more people than you'd expect. And a11y features aren't just about inclusivity; they also make your software more efficient for your power users.</p>
+            </section>
+
+            <section>
+                <h2>¬ Further Reading</h2>
+                <p>LastPass wrote about the company-wide accessibility journey:</p>
+                <ul>
+                    <li><a href="https://blog.lastpass.com/posts/lastpasss-accessibility-commitment" target="_blank" rel="noreferrer">LastPass's Accessibility Commitment</a></li>
+                    <li><a href="https://blog.lastpass.com/posts/continuing-lastpasss-accessibility-journey-lastpasss-vpat-report-now-available" target="_blank" rel="noreferrer">Continuing LastPass's Accessibility Journey - LastPass's VPAT Report Now Available</a></li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section>
+                <p><a href="index.html">&larr; back to home</a></p>
+            </section>
+        </main>
+    </wrapper>
+</body>
+
+</html>

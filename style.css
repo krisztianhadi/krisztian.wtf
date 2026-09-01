@@ -1,102 +1,233 @@
+:root {
+  --bg: darkslateblue;
+  --text: aliceblue;
+  --link: #f4ab92;
+  --selection-bg: blueviolet;
+  --selection-text: aliceblue;
+  --muted: #bdbfdc;
+}
+
 *,
-*::before, *::after {
-    box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    
-    font-size: 16px;
-    font-family: ui-monospace, 
-             Menlo, Monaco, 
-             "Cascadia Mono", "Segoe UI Mono", 
-             "Roboto Mono", 
-             "Oxygen Mono", 
-             "Ubuntu Monospace", 
-             "Source Code Pro",
-             "Fira Mono", 
-             "Droid Sans Mono", 
-             "Courier New", monospace;
+  background-color: var(--bg);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+
+  font-size: 16px;
+  font-family:
+    ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  color: var(--text);
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
-input, button, textarea, select {
-    font: inherit;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-    text-wrap: balance;
-    margin: 3rem 0 .5rem 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  /* text-transform: uppercase; */
+  margin: 3rem 0 0.5rem 0;
+  font-weight: 500;
 }
 
-h1, h2 {
-    margin-top: 1rem;
+h1,
+h2 {
+  margin-top: 1rem;
 }
 
 hr {
-    margin: 3rem 0 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 p {
-    margin: 1rem 0 .5rem 0;
+  margin: 1rem 0 0.5rem 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--link);
+  color: var(--muted);
+  margin: 1.5rem 0;
+  padding-left: 1em;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 0.1em 0.3em;
+}
+
+pre {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 1em;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus-visible {
+  background-color: var(--link);
+  color: var(--bg);
+  padding: 0.15em 0.25em;
+  margin: 0 -0.25em;
+  outline: none;
 }
 
 img {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+*::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+*::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+*::-webkit-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 wrapper {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
-    max-width: 576px;
-    margin: 1.5rem 1rem;
+  max-width: 640px;
+  margin: 2rem 1rem;
 }
 
-main.cv h1, main.cv h2 {
-    margin: 0;
+footer {
+  margin-top: 3rem;
+  padding: 0.5rem 0;
+
+  border-top: 1px dashed var(--text);
+
+  opacity: 50%;
+}
+
+#toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(5rem);
+  background-color: #26804e;
+  color: aliceblue;
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+body.theme-camsite {
+  --bg: #241630;
+  --text: #f4ecf7;
+  --link: #e8789a;
+  --muted: #b5abbb;
+  --selection-bg: #b04a6e;
+  --selection-text: #f4ecf7;
+}
+
+body.theme-warface {
+  --bg: #1c2114;
+  --text: #eef0e6;
+  --link: #d2a13c;
+  --muted: #afb1a7;
+  --selection-bg: #7a8b3d;
+  --selection-text: #eef0e6;
+}
+
+body.theme-lastpass {
+  --bg: #2a1012;
+  --text: #f4eaeb;
+  --link: #e05252;
+  --muted: #b7a8a9;
+  --selection-bg: #8f2d2d;
+  --selection-text: #f4eaeb;
+}
+
+main.cv h1,
+main.cv h2 {
+  margin: 0;
 }
 
 .caption {
-    opacity: .5;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+  opacity: 0.65;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 @media print {
+  /* Dedicated to the fine HR people who still love to print out CVs to take it to the conference room. If this makes their day better, I'm happy. Truly. */
 
-    /* Dedicated to the fine HR people who still love to print out CVs to take it to the conference room. If this makes their day better, I'm happy. Truly. */
-
-   body {
+  body {
     font-size: 14px;
-   }
+  }
 
-   page {
+  page {
     margin: 2cm;
-   }
+  }
 
-   p, li, h1, h2, h3, h4, h5, h6 {
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     break-inside: avoid;
-   }
-
-   
+  }
 }
