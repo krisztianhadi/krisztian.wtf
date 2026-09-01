@@ -1,2 +1,6 @@
 .*
 !/.gitignore
+
+# local GitHub token (never commit)
+/.github-token
+/.git-credentials
