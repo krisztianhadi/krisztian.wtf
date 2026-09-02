@@ -1,11 +1,16 @@
+/* ============================================
+   THEMES
+   ============================================ */
+
 :root {
+  /* Base palette - lostsignals default */
   --bg: darkslateblue;
   --text: aliceblue;
   --link: #f4ab92;
   --selection-bg: blueviolet;
   --selection-text: aliceblue;
   --muted: #bdbfdc;
-  
+
   /* Code syntax colors - default theme */
   --code-bg: rgba(255, 255, 255, 0.05);
   --code-text: var(--text);
@@ -22,290 +27,6 @@
   --code-class: #c9a0dc;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-@view-transition {
-  navigation: auto;
-}
-
-body {
-  background-color: var(--bg);
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  font-size: 16px;
-  font-family:
-    "IBM Plex Mono", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  color: var(--text);
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-  /* text-wrap: balance; */
-  margin: 2rem 0 0.5rem 0;
-  font-weight: 400;
-}
-
-h1, h3 {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-h1 {
-  text-transform: uppercase;
-  margin-bottom: .1rem;
-}
-
-hr {
-  margin: 3rem 0 1.5rem 0;
-  color: var(--muted);
-  opacity: 50%;
-}
-
-p, ul {
-  margin: 1rem 0 0.5rem 0;
-}
-
-blockquote {
-  border-left: 3px solid var(--link);
-  color: var(--muted);
-  margin: 1.5rem 0;
-  padding-left: 1em;
-}
-
-/* Code styles */
-code {
-  background: var(--code-bg);
-  color: var(--code-text);
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  border-radius: 6px;
-  font-size: 0.9em;
-}
-
-.code-block {
-  background: var(--code-bg);
-  padding: 1em;
-  border-radius: 8px;
-  font-size: 0.85em;
-  line-height: 1.6;
-  overflow-x: auto;
-  margin: 1rem 0;
-}
-
-.code-block .line {
-  display: flex;
-}
-
-.code-block .line-numbers {
-  color: var(--code-comment);
-  user-select: none;
-  margin-right: 1.5em;
-  opacity: 0.6;
-}
-
-/* Code syntax colors - uses CSS variables */
-.code-tag { color: var(--code-tag); }
-.code-attr { color: var(--code-attr); }
-.code-string { color: var(--code-string); }
-.code-operator { color: var(--code-operator); }
-.code-punctuation { color: var(--code-punctuation); }
-.code-comment { color: var(--code-comment); font-style: italic; }
-.code-keyword { color: var(--code-keyword); }
-.code-variable { color: var(--code-variable); }
-.code-number { color: var(--code-number); }
-.code-function { color: var(--code-function); }
-.code-class { color: var(--code-class); }
-
-/* Links */
-a {
-  color: var(--link);
-}
-
-a:hover,
-a:focus-visible {
-  background-color: var(--link);
-  color: var(--bg);
-  padding: 0.15em 0.25em;
-  margin: 0 -0.25em;
-  outline: none;
-  border-radius: .1rem;
-}
-
-/* Outbound link icon */
-.outbound::after {
-  content: "";
-  display: inline-block;
-  width: 0.8em;
-  height: 0.8em;
-  margin-left: 0.2em;
-  background: currentColor;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
-}
-
-/* Images */
-img {
-  margin: 2rem 0 2rem 0;
-  border: 1px var(--muted) solid;
-  padding: .2rem; 
-  border-radius: .2rem;
-}
-
-.caption {
-  display: block;
-  opacity: 0.65;
-  font-size: 0.8rem;
-  font-style: italic;
-  margin: 0 0 2rem 0;
-}
-
-img + .caption,
-#jumpycat + .caption {
-  margin-top: -1.5rem;
-}
-
-/* Jumpycat hover */
-#jumpycat {
-  position: relative;
-  display: block;
-  margin-top: -1rem;
-}
-
-#jumpycat:hover::after {
-  content: "";
-  background-image: url(images/aniko-laci.jpg);  
-  background-size: cover;
-  background-position: center;
-  display: block;
-  position: absolute;
-  inset: calc(.2rem + 1px);
-  border-radius: .2rem;
-}
-
-/* Lists */
-li {
-  margin: .7rem 0 .5rem 0;
-  padding-left: .3rem;
-  list-style-type: square;
-}
-
-/* Selection */
-*::selection {
-  background: var(--selection-bg);
-  color: var(--selection-text);
-}
-*::-moz-selection {
-  background: var(--selection-bg);
-  color: var(--selection-text);
-}
-*::-webkit-selection {
-  background: var(--selection-bg);
-  color: var(--selection-text);
-}
-
-/* Layout */
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-section:first-of-type .page-nav  {
-  padding-bottom: 1.5rem;
-  margin-bottom: 2rem;
-  border-bottom: var(--muted) dashed 1px;
-}
-
-section:last-of-type .page-nav  {
-  padding-top: 1.5rem;
-  margin-top: 2rem;
-  border-top: var(--muted) dashed 1px;
-}
-
-.page-nav a {
-  white-space: nowrap;
-}
-
-.page-nav a:hover,
-.page-nav a:focus-visible {
-  margin: -0.15em -0.25em;
-}
-
-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  max-width: 640px;
-  margin: 2rem 1rem;
-}
-
-footer {
-  margin-top: 3rem;
-  padding: 0.5rem 0;
-  border-top: 1px dashed var(--text);
-  opacity: 50%;
-}
-
-/* Toast */
-#toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(5rem);
-  background-color: #26804e;
-  color: aliceblue;
-  padding: 1rem 1.4rem;
-  border-radius: 1rem;
-  opacity: 0;
-  transition: all 0.5s ease;
-  pointer-events: none;
-  z-index: 9999;
-}
-#toast.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* ============================================
-   THEMES
-   ============================================ */
-
 /* Camsite Theme */
 body.theme-camsite {
   --bg: #241630;
@@ -314,7 +35,7 @@ body.theme-camsite {
   --muted: #b5abbb;
   --selection-bg: #b04a6e;
   --selection-text: #f4ecf7;
-  
+
   --code-bg: #1a0f22;
   --code-tag: #e8789a;
   --code-attr: #c9a8d4;
@@ -335,7 +56,7 @@ body.theme-warface {
   --muted: #afb1a7;
   --selection-bg: #7a8b3d;
   --selection-text: #eef0e6;
-  
+
   --code-bg: #14180e;
   --code-tag: #d2a13c;
   --code-attr: #b8baa8;
@@ -356,7 +77,7 @@ body.theme-lastpass {
   --muted: #b7a8a9;
   --selection-bg: #8f2d2d;
   --selection-text: #f4eaeb;
-  
+
   --code-bg: #1f0b0d;
   --code-text: #f4eaeb;
   --code-tag: #e05252;
@@ -373,33 +94,355 @@ body.theme-lastpass {
 }
 
 /* ============================================
-   CV SPECIAL STYLES
+   BASE
    ============================================ */
 
-main.cv h1,
-main.cv h2 {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
 }
 
+html {
+  font-size: 100%;
+}
 
+/* View transitions between pages */
+@view-transition {
+  navigation: auto;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family:
+    "IBM Plex Mono", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+*::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+*::-webkit-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 2rem 0 0.5rem;
+  overflow-wrap: break-word;
+}
+
+h1,
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+
+p,
+ul {
+  margin: 1rem 0 0.5rem;
+}
+
+li {
+  list-style-type: square;
+  margin: 0.7rem 0 0.5rem;
+  padding-left: 0.3rem;
+}
+
+blockquote {
+  border-left: 3px solid var(--link);
+  color: var(--muted);
+  margin: 1.5rem 0;
+  padding-left: 1em;
+}
+
+hr {
+  color: var(--muted);
+  margin: 3rem 0 1.5rem;
+  opacity: 0.5;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus-visible {
+  background-color: var(--link);
+  border-radius: 0.1rem;
+  color: var(--bg);
+  margin: 0 -0.25em;
+  outline: none;
+  padding: 0.15em 0.25em;
+}
+
+/* Outbound link icon */
+.outbound::after {
+  background: currentColor;
+  content: "";
+  display: inline-block;
+  height: 0.8em;
+  margin-left: 0.2em;
+  width: 0.8em;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+/* ============================================
+   CODE
+   ============================================ */
+
+code {
+  background: var(--code-bg);
+  border-radius: 0.4rem;
+  color: var(--code-text);
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 0.2em 0.6em;
+}
+
+.code-block {
+  background: var(--code-bg);
+  border-radius: 0.5rem;
+  font-size: 0.85em;
+  line-height: 1.6;
+  margin: 1rem 0;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+.code-block .line {
+  display: flex;
+}
+
+.code-block .line-numbers {
+  color: var(--code-comment);
+  margin-right: 1.5em;
+  opacity: 0.6;
+  user-select: none;
+}
+
+/* Code syntax colors - uses CSS variables */
+.code-tag { color: var(--code-tag); }
+.code-attr { color: var(--code-attr); }
+.code-string { color: var(--code-string); }
+.code-operator { color: var(--code-operator); }
+.code-punctuation { color: var(--code-punctuation); }
+.code-comment { color: var(--code-comment); font-style: italic; }
+.code-keyword { color: var(--code-keyword); }
+.code-variable { color: var(--code-variable); }
+.code-number { color: var(--code-number); }
+.code-function { color: var(--code-function); }
+.code-class { color: var(--code-class); }
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+img {
+  border: 1px solid var(--muted);
+  border-radius: 0.2rem;
+  margin: 2rem 0;
+  padding: 0.2rem;
+}
+
+.caption {
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 0 2rem;
+  opacity: 0.65;
+}
+
+img + .caption,
+#jumpycat + .caption {
+  margin-top: -1.5rem;
+}
+
+/* Jumpycat hover */
+#jumpycat {
+  display: block;
+  margin-top: -1rem;
+  position: relative;
+}
+
+#jumpycat:hover::after {
+  background-image: url(images/aniko-laci.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.2rem;
+  content: "";
+  display: block;
+  inset: calc(0.2rem + 1px);
+  position: absolute;
+}
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+
+wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  margin: 2rem 1rem;
+  max-width: 640px;
+}
+
+.page-nav {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-nav a {
+  white-space: nowrap;
+}
+
+.page-nav a:hover,
+.page-nav a:focus-visible {
+  margin: -0.15em -0.25em;
+}
+
+section:first-of-type .page-nav {
+  border-bottom: 1px dashed var(--muted);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+section:last-of-type .page-nav {
+  border-top: 1px dashed var(--muted);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  gap: 0.5em;
+  margin: 3rem 0 2rem;
+}
+
+footer .dot-fill {
+  background-image: radial-gradient(circle, currentColor 0.1em, transparent 0.1em);
+  background-position: center;
+  background-size: 1em 1em;
+  flex: 1;
+  height: 1em;
+  opacity: 0.5;
+}
+
+footer .heart {
+  color: var(--link);
+}
+
+/* ============================================
+   TOAST
+   ============================================ */
+
+#toast {
+  background-color: #26804e;
+  border-radius: 1rem;
+  bottom: 2rem;
+  color: aliceblue;
+  left: 50%;
+  opacity: 0;
+  padding: 1rem 1.4rem;
+  pointer-events: none;
+  position: fixed;
+  transform: translateX(-50%) translateY(5rem);
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================
+   RESUME (resume.html)
+   ============================================ */
+
+main.resume h1,
+main.resume h2 {
+  margin: 0;
+}
 
 /* ============================================
    PRINT STYLES
    ============================================ */
 
 @media print {
-  /* Dedicated to the fine HR people who still love to print out CVs 
-     to take it to the conference room. If this makes their day better, 
+  /* Dedicated to the fine HR people who still love to print out CVs
+     to take it to the conference room. If this makes their day better,
      I'm happy. Truly. */
-  
+
   body {
     font-size: 14px;
   }
-  
-  page {
-    margin: 2cm;
-  }
-  
+
   p,
   li,
   h1,
