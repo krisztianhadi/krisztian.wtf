@@ -120,9 +120,9 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family:
-    "IBM Plex Mono", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    "Droid Sans Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
