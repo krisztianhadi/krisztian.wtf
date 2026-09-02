@@ -1,7 +1,7 @@
 async function copyToClipboard(text) {
     try {
         await navigator.clipboard.writeText(text);
-        showToast('\u2728 Copied it to your clipboard yay!');
+        showToast('Copied it to your clipboard yay!');
     } catch {
         showToast('Could not copy :( Please copy manually.');
     }
