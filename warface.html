@@ -8,6 +8,9 @@
     <title>Warface Auction House - 2016 - Krisztián Hadi</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Case study: designing the player-to-player auction house for Warface, the free to play FPS from Crytek." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="favicon.png">
 
@@ -19,7 +22,10 @@
 <body class="theme-warface">
     <wrapper>
         <main>
-            <p><a href="index.html">&larr; back to home</a></p>
+            <nav class="page-nav">
+                    <a href="index.html#projects">&larr; back to home</a>
+                    <a href="camsite.html">next project &rarr;</a>
+                </nav>
 
             <h1>Warface Auction House ▓▒░</h1>
             <p class="caption">Senior Web Designer and UI developer @ Crytek - 2016</p>
@@ -66,11 +72,13 @@
             <section>
                 <h2>¬ Design</h2>
                 <p>I started with the possible flow variations of the two options: selling and buying.</p>
-                <img src="images/auction-flow.jpg" alt="Auction Flow" />
+                <img src="images/auction-flow.jpg" alt="User flow illustrated to be able to start development before the final UI design." />
+                <small class="caption" aria-hidden="true"><i>User flow illustrated to be able to start development before the final UI design.</i></small>
                 <p>I had to plan the features to give players the most comfortable experience within limited development resources. To help this plan succeed, we decided on a soft launch: first a closed beta internally with the "beta group", then a 1-2 week long, unannounced public run.</p>
                 <hr />
                 <p>From the visual point of view, we already had a design system for the HUB, so I had to implement the new features based on it and extend the system if needed.</p>
-                <img src="images/auction-main.jpg" alt="Auction List Page" />
+                <img src="images/auction-main.jpg" alt="The main view of the auction house with filtering and search." />
+                <small class="caption" aria-hidden="true"><i>The main view of the auction house with filtering and search.</i></small>
                 <p>I created the mockups for each step and handed them over to the front-end devs to apply to the functioning interfaces they built from the wireframes.</p>
                 <p>I really wanted to keep the interface clean and easy to use. A few key features:</p>
                 <ul>
@@ -83,6 +91,7 @@
                     <li>Notifications with quick bid and instant credit purchase if wallet balance is low, to have an excellent monetization opportunity</li>
                 </ul>
                 <img src="images/auction-item.jpg" alt="Auction Item Page" />
+                <small class="caption" aria-hidden="true"><i>Item view with all in-game stats and bidding interface.</i></small>
             </section>
 
             <section>
@@ -102,7 +111,10 @@
             <hr />
 
             <section>
-                <p><a href="index.html">&larr; back to home</a></p>
+                <nav class="page-nav">
+                    <a href="index.html#projects">&larr; back to home</a>
+                    <a href="camsite.html">next project &rarr;</a>
+                </nav>
             </section>
         </main>
     </wrapper>
