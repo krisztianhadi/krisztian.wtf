@@ -4,3 +4,6 @@
 # local GitHub token (never commit)
 /.github-token
 /.git-credentials
+
+# local dev server config (browser-sync extensionless middleware)
+/bs-config.js

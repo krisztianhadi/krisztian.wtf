@@ -436,6 +436,17 @@ main.resume h2 {
   margin: 0;
 }
 
+main.resume .role {
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media print {
+  main.resume .page-nav {
+    display: none;
+  }
+}
+
 /* ============================================
    PRINT STYLES
    ============================================ */
@@ -446,7 +457,23 @@ main.resume h2 {
      I'm happy. Truly. */
 
   body {
+    background-color: #fff;
+    color: #000;
     font-size: 14px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  main.resume .role {
+    color: #444;
+  }
+
+  hr {
+    color: #999;
+    opacity: 1;
   }
 
   p,
