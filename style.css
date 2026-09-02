@@ -5,6 +5,21 @@
   --selection-bg: blueviolet;
   --selection-text: aliceblue;
   --muted: #bdbfdc;
+  
+  /* Code syntax colors - default theme */
+  --code-bg: rgba(255, 255, 255, 0.05);
+  --code-text: var(--text);
+  --code-tag: var(--link);
+  --code-attr: var(--muted);
+  --code-string: #b0c4de;
+  --code-operator: var(--link);
+  --code-punctuation: var(--muted);
+  --code-comment: var(--muted);
+  --code-keyword: #c9a0dc;
+  --code-variable: var(--muted);
+  --code-number: #b0c4de;
+  --code-function: var(--link);
+  --code-class: #c9a0dc;
 }
 
 *,
@@ -21,13 +36,13 @@ body {
   background-color: var(--bg);
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
-
   font-size: 16px;
   font-family:
     ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   color: var(--text);
+  padding-bottom: 5rem;
 }
 
 img,
@@ -54,18 +69,19 @@ h5,
 h6 {
   overflow-wrap: break-word;
   text-wrap: balance;
-  /* text-transform: uppercase; */
   margin: 3rem 0 0.5rem 0;
   font-weight: 500;
 }
 
-h1,
-h2 {
+h1, h3 {
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 hr {
   margin: 3rem 0 1.5rem 0;
+  color: var(--muted);
+  opacity: 50%;
 }
 
 p {
@@ -79,23 +95,51 @@ blockquote {
   padding-left: 1em;
 }
 
+/* Code styles */
 code {
-  background-color: rgba(255, 255, 255, 0.12);
-  padding: 0.1em 0.3em;
+  background: var(--code-bg);
+  color: var(--code-text);
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+  font-size: 0.9em;
 }
 
-pre {
-  background-color: rgba(255, 255, 255, 0.12);
+.code-block {
+  background: var(--code-bg);
   padding: 1em;
+  border-radius: 8px;
+  font-size: 0.85em;
+  line-height: 1.6;
   overflow-x: auto;
   margin: 1rem 0;
 }
 
-pre code {
-  background-color: transparent;
-  padding: 0;
+.code-block .line {
+  display: flex;
 }
 
+.code-block .line-numbers {
+  color: var(--code-comment);
+  user-select: none;
+  margin-right: 1.5em;
+  opacity: 0.6;
+}
+
+/* Code syntax colors - uses CSS variables */
+.code-tag { color: var(--code-tag); }
+.code-attr { color: var(--code-attr); }
+.code-string { color: var(--code-string); }
+.code-operator { color: var(--code-operator); }
+.code-punctuation { color: var(--code-punctuation); }
+.code-comment { color: var(--code-comment); font-style: italic; }
+.code-keyword { color: var(--code-keyword); }
+.code-variable { color: var(--code-variable); }
+.code-number { color: var(--code-number); }
+.code-function { color: var(--code-function); }
+.code-class { color: var(--code-class); }
+
+/* Links */
 a {
   color: var(--link);
 }
@@ -107,16 +151,53 @@ a:focus-visible {
   padding: 0.15em 0.25em;
   margin: 0 -0.25em;
   outline: none;
+  border-radius: .1rem;
 }
 
+/* Outbound link icon */
+.outbound::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.2em;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+/* Images */
 img {
   margin-top: 1rem;
+  border: 1px var(--muted) solid;
+  padding: .2rem; 
+  border-radius: .2rem;
 }
 
+/* Jumpycat hover */
+#jumpycat {
+  position: relative;
+  display: block;
+}
+
+#jumpycat:hover::after {
+  content: "";
+  background-image: url(images/aniko-laci.jpg);  
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: absolute;
+  inset: calc(.2rem + 1px);
+  border-radius: .2rem;
+}
+
+/* Lists */
 li {
   margin-bottom: 0.5rem;
+  list-style-type: square;
 }
 
+/* Selection */
 *::selection {
   background: var(--selection-bg);
   color: var(--selection-text);
@@ -130,6 +211,7 @@ li {
   color: var(--selection-text);
 }
 
+/* Layout */
 wrapper {
   width: 100%;
   min-height: 100vh;
@@ -146,12 +228,11 @@ main {
 footer {
   margin-top: 3rem;
   padding: 0.5rem 0;
-
   border-top: 1px dashed var(--text);
-
   opacity: 50%;
 }
 
+/* Toast */
 #toast {
   position: fixed;
   bottom: 2rem;
@@ -171,6 +252,11 @@ footer {
   transform: translateX(-50%) translateY(0);
 }
 
+/* ============================================
+   THEMES
+   ============================================ */
+
+/* Camsite Theme */
 body.theme-camsite {
   --bg: #241630;
   --text: #f4ecf7;
@@ -178,8 +264,20 @@ body.theme-camsite {
   --muted: #b5abbb;
   --selection-bg: #b04a6e;
   --selection-text: #f4ecf7;
+  
+  --code-bg: #1a0f22;
+  --code-tag: #e8789a;
+  --code-attr: #c9a8d4;
+  --code-string: #f0d4b0;
+  --code-operator: #e8789a;
+  --code-keyword: #d4a8c9;
+  --code-variable: #c9a8d4;
+  --code-number: #f0d4b0;
+  --code-function: #e8789a;
+  --code-class: #d4a8c9;
 }
 
+/* Warface Theme */
 body.theme-warface {
   --bg: #1c2114;
   --text: #eef0e6;
@@ -187,8 +285,20 @@ body.theme-warface {
   --muted: #afb1a7;
   --selection-bg: #7a8b3d;
   --selection-text: #eef0e6;
+  
+  --code-bg: #14180e;
+  --code-tag: #d2a13c;
+  --code-attr: #b8baa8;
+  --code-string: #e0d4a0;
+  --code-operator: #d2a13c;
+  --code-keyword: #a8b87a;
+  --code-variable: #b8baa8;
+  --code-number: #e0d4a0;
+  --code-function: #d2a13c;
+  --code-class: #a8b87a;
 }
 
+/* LastPass Theme */
 body.theme-lastpass {
   --bg: #2a1012;
   --text: #f4eaeb;
@@ -196,7 +306,25 @@ body.theme-lastpass {
   --muted: #b7a8a9;
   --selection-bg: #8f2d2d;
   --selection-text: #f4eaeb;
+  
+  --code-bg: #1f0b0d;
+  --code-text: #f4eaeb;
+  --code-tag: #e05252;
+  --code-attr: #d4a0a0;
+  --code-string: #e8c9a0;
+  --code-operator: #e05252;
+  --code-punctuation: #b7a8a9;
+  --code-comment: #7a5a5a;
+  --code-keyword: #d47a7a;
+  --code-variable: #c9a0a0;
+  --code-number: #d4a0a0;
+  --code-function: #e05252;
+  --code-class: #c9a0a0;
 }
+
+/* ============================================
+   CV SPECIAL STYLES
+   ============================================ */
 
 main.cv h1,
 main.cv h2 {
@@ -209,17 +337,23 @@ main.cv h2 {
   margin-bottom: 1rem;
 }
 
-@media print {
-  /* Dedicated to the fine HR people who still love to print out CVs to take it to the conference room. If this makes their day better, I'm happy. Truly. */
+/* ============================================
+   PRINT STYLES
+   ============================================ */
 
+@media print {
+  /* Dedicated to the fine HR people who still love to print out CVs 
+     to take it to the conference room. If this makes their day better, 
+     I'm happy. Truly. */
+  
   body {
     font-size: 14px;
   }
-
+  
   page {
     margin: 2cm;
   }
-
+  
   p,
   li,
   h1,
