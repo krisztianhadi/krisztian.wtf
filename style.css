@@ -502,6 +502,11 @@ main.resume .intro .img-cv {
   }
 }
 
+main.resume .dl-links {
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
 /* Mobile: shrink the default list indent so text aligns with headlines */
 @media (max-width: 620px) {
   ul {

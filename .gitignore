@@ -7,3 +7,6 @@
 
 # local dev server config (browser-sync extensionless middleware)
 /bs-config.js
+
+# local CV scratch (served copies live at repo root)
+/docs/
