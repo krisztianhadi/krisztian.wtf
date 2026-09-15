@@ -1,0 +1,9 @@
+# Jekyll configuration for GitHub Pages.
+#
+# The site is plain static HTML, so this file exists for one reason: to keep
+# repository files that are not part of the website out of the published site.
+# Anything listed under `exclude` stays in the repo but is never copied into
+# the build, so it cannot be fetched from krisztian.wtf.
+
+exclude:
+  - WRITING_STYLE.md

@@ -46,8 +46,8 @@ live line.
   beats pretending otherwise.
 - `/cv` and `/nsfw/` are `noindex`, and `robots.txt` asks crawlers to skip the
   CV downloads.
-- The copy follows a personal writing guide that is deliberately not part of
-  this repository.
+- The copy follows `WRITING_STYLE.md`, which lives in this repository but is
+  excluded from the published site through `_config.yml`.
 - `.gitignore` covers local scratch (`.tmp-*`), the dev-server config, and
   full-size image masters.
 - Content, design and images © Krisztián Hadi. Read the code all you like,
