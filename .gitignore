@@ -10,3 +10,6 @@
 
 # local CV scratch (served copies live at repo root)
 /docs/
+
+# personal copy guide - keep local, never publish (Pages serves every tracked file)
+/WRITING_STYLE.md
