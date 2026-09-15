@@ -1,8 +1,8 @@
 # krisztian.wtf
 
-Source of [krisztian.wtf](https://krisztian.wtf) — a hand-written static site.
-No build step, no framework, no dependencies: plain HTML, one stylesheet, one
-small script.
+Source of [krisztian.wtf](https://krisztian.wtf) — a hand-written and
+AI-enhanced static site. No build step, no framework, no dependencies: plain
+HTML, one stylesheet, one small script.
 
 ## Pages
 
@@ -40,6 +40,9 @@ live line.
 
 ## Notes
 
+- Built by hand and with AI. The design and copy decisions are mine; a large
+  part of the implementation, refactoring and verification was done with AI
+  assistance, and saying so plainly beats pretending otherwise.
 - `/cv` and `/nsfw/` are `noindex`, and `robots.txt` asks crawlers to skip the
   CV downloads.
 - The copy follows a personal writing guide that is deliberately not part of
