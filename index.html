@@ -5,22 +5,23 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Krisztián Hadi - Multidisciplinary Designer and Design Engineer</title>
+    <title>Krisztián Hadi — Multidisciplinary Designer and Design Engineer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Krisztián Hadi - multidisciplinary designer and design engineer who has been crafting the world wide web for more than two decades." />
+    <meta name="description" content="Krisztián Hadi — multidisciplinary designer and design engineer who has been crafting the world wide web for more than two decades." />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="favicon.png">
 
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 
-    <meta property="og:title" content="Krisztián Hadi - Multidisciplinary Designer and Design Engineer" />
+    <meta property="og:title" content="Krisztián Hadi — Multidisciplinary Designer and Design Engineer" />
     <meta property="og:description" content="Multidisciplinary designer and design engineer who has been crafting the world wide web for more than two decades." />
     <meta property="og:image" content="https://krisztian.wtf/images/krisztian-hadi.jpg" />
+    <meta property="og:url" content="https://krisztian.wtf/" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@krisztian" />
-    <meta name="twitter:title" content="Krisztián Hadi - Multidisciplinary Designer and Design Engineer" />
+    <meta name="twitter:title" content="Krisztián Hadi — Multidisciplinary Designer and Design Engineer" />
     <meta name="twitter:description" content="Multidisciplinary designer and design engineer who has been crafting the world wide web for more than two decades." />
     <meta name="twitter:image" content="https://krisztian.wtf/images/krisztian-hadi.jpg" />
     <script defer src="https://ramen.lostsignals.studio/script.js" data-website-id="d34218b6-079f-4af4-a048-6a681e434279" data-cache="true"
@@ -28,79 +29,123 @@
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="/">▓▒░ Krisztián Hadi</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">≡</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main">
+                <a href="/about">about</a>
+                <a href="/#projects" aria-current="page">projects</a>
+                <a href="/cv">cv</a>
+                <a href="/#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+
     <wrapper>
         <main>
-            <h1>Hey there stranger! ▓▒░</h1>
-            <h3>I'm Krisztián, a Multidisciplinary Designer and Design Engineer who has been crafting the world wide web for more than two decades.</h3>
-
-            <section>
-                <img src="images/krisztian-hadi.jpg" alt="Photo of me, looking in the distance with crossed arms and a smile." />
-            </section>
-
-            <section>
-                <h2>&not; About me &#x25AB;</h2>
-
-                <p>Started my journey with reverse engineering websites, learning the ins and outs of the early web with tools like Netscape Composer, MS Frontpage, Dreamweaver... just to put you on memory lane...</p>
-
-                <blockquote><em>"I was there, Gandalf. I was there 3000 years ago..."</em></blockquote>
-
-                <p>Touching ground in the advertising, gaming, adult entertainment, educational and SaaS industries in diverse roles collecting not just good memories but wide-ranging experience from project management to digital accessibility.</p>
-
-                <p>I like to consider myself a great team player and result-oriented professional, who doesn't bullshit but focuses on the cleanest and most efficient solutions delivered utilising all the available knowledge within the team and beyond.</p> 
-
-                <p>Personally I'm not a fan of walled gardens, airtight separation between design and development. I believe in transparency, communication and collaboration. If a concept is faster to implement in code than spending countless hours in Figma (not even talking about the shortcomings of design software compared to code) I'm more than happy to jump on the keyboard. Actually preferring to prototype in the browser rather than in any other design tool.</p>
-
-                <p>I'm all in for indie and open web, user-friendly interfaces and clean, single purpose products.</p>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Hello there!</h1>
+                    <p>I'm Krisztián, a Multidisciplinary Designer and Design Engineer who has been crafting the world wide web for more than two decades.</p>
+                    <p>I design and build digital products end to end: research and flows, interfaces and design systems — then the HTML, CSS, and JavaScript that actually ships them. I don't believe in the wall between design and code. Most of my best work happened in the browser, live coding, where an idea can be clicked five minutes after it was said out loud.</p>
+                    <p>I've worked with Microsoft, LogMeIn, LastPass, and Crytek, just to name a few. These days, I build my own open-source apps — mostly because I wanted some simple tools to exist, but also because I'm having fun learning agentic development along the way.</p>
+                    <p>Currently open to remote Senior Product Design and Design Engineer roles — especially in SaaS, open source, or privacy-focused teams.</p>
+                    <p><a href="/about">more about me &rarr;</a></p>
+                </div>
             </section>
 
             <section id="projects">
-                <h2>&not; Past projects &#x25AB;&#x25AA;</h2>
-                <p>During my career I had the chance to work with some of the biggest brands on the planet together with small startups, helping them to improve their products, providing them with the best design solutions. Just to mention a few: Microsoft, LogmeIn, LastPass, Crytek, LiveJasmin (as Product designer), and Volvo, Absolut Vodka, Milka, Nivea (as Digital Art Director) and the list goes on and on.</p>
+                <h2>Case studies</h2>
 
-                <p>Some short case studies:</p>
-                <ul>
-                    <li><a href="/lastpass">LastPass a11y Overhaul - 2021</a><br/>Complete accessibility refactor, 14% increase in compliance</li>
-                    <li><a href="/warface">Warface Auction House - 2016</a><br/>Player-to-player auction house for Crytek's FPS</li>
-                    <li><a href="/camsite">Glamorous Camsite - 2014</a><br/>Designing the standalone glamorous version of LiveJasmin</li>
-                   
-                </ul>
-
-                <p>Also I'm building my own FOSS webapps under the name Lost Signals:</p>
-                <ul>
-                    <li><a class="outbound" href="https://ghosted.lostsignals.studio/" target="_blank">Ghosted (beta) - 2026</a><br/>A simple job application logbook for job seekers.</li>
-                    <li><a class="outbound" href="https://kaja.lostsignals.studio/" target="_blank">Kaja - Soon!</a><br/>Neurodivergent friendly meal tracker with AI assistance.</li>
-                    <li>Keret - Soon!<br/>A simple GitHub Pages-hosted photo gallery for amateur photographers.</li>
-                </ul>
-                
-            </section>
-
-            <section>
-                <h2>&not; What I'm good at &#x25AB;&#x25AB;</h2>
-
-                <p>While my main area of expertise is digital product design, I can help you with fine-tuning your strategy, development workflow, branding or auditing current product accessibility, UX flows and technical shortcomings.</p>
-
-                <p>For design primarily using Figma these days, but I'm comfortable with any design software, end of the day they are all the same, not the tool that defines the designer.</p>
-
-                <p>For coding and building I'm using VSCodium with the help of various open weight LLMs like DeepSeek or GLM by Z, but not emotionally attached to any of the dev environments out there. I always look for efficiency and productivity, not the latest hyped features.</p>
-
-                <p>Tech stack wise I'm most proficient with HTML, CSS and JavaScript and have fond memories of PHP. Although I'm not chasing the latest trends, I can pick up any other language if needed, I still think that it's not the tech that defines the human behind the keyboard - <em>everything is just a tool to achieve the goal and a matter of comfort.</em></p>
-            </section>
-
-            <section>
-                <h2>&not; Personal life &#x25AB;&#x25AA;&#x25AA;</h2>
-                <div id="jumpycat">
-                    <img src="images/aniko_laci-gizi.jpg" alt="Photo of my wife Anikó 👱🏼‍♀️ and our two cats Gizi (Calico cat) and Laci (Black cat)." />
+                <div class="project-grid">
+                <a class="project-card" href="/lastpass">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/lastpass-og.jpg" alt="LastPass logo on a dark code editor screenshot." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>LastPass &times; a11y Overhaul</h3>
+                                <p class="meta">Senior Product Designer @ GoTo — 2021</p>
+                                <p class="desc">Complete accessibility refactor of the web app and browser extension, 14% increase in compliance.</p>
+                                <span class="card-link">read more &rarr;</span>
+                            </div>
+                    
+                    </div>
+                </a>
+                <a class="project-card" href="/warface">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/warface-og.jpg" alt="Warface Auction House interface with item listings." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>Warface Auction House</h3>
+                                <p class="meta">Senior Web Designer and UI Developer @ Crytek — 2016</p>
+                                <p class="desc">Player-to-player auction house for Crytek's FPS, from item browsing to bidding flow.</p>
+                                <span class="card-link">read more &rarr;</span>
+                            </div>
+                    
+                    </div>
+                </a>
+                <a class="project-card" href="/camsite">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/camsite-og.jpg" alt="Glamorous Camsite interface." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>Glamorous Camsite</h3>
+                                <p class="meta">Senior UI/UX Designer @ Docler Holding — 2014</p>
+                                <p class="desc">Designing the standalone glamorous version of the most popular camsite.</p>
+                                <span class="card-link">read more &rarr;</span>
+                            </div>
+                    
+                    </div>
+                </a>
                 </div>
-                <small class="caption" aria-hidden="true">Photo of my wife Anikó 👱🏼‍♀️ and our two cats Gizi 🐈 and Laci 🐈‍⬛.</small>
-                <p>Slow travelling the world with my wife and our two cats. Currently in Thailand 🇹🇭 and studying traditional Thai massage.</p>
-                <p>In the meantime I like to take <a class="outbound" href="https://jpg.krisztian.wtf/" target="_blank">photos</a> (pretty much obsessed with black and white pictures), have long walks on the beach and play "weird" <a class="outbound" href="https://wav.krisztian.wtf" target="_blank">electronic instruments</a> or my handpan (sometimes even both together).</p>
-                
+
+            </section>
+
+            <section>
+                <h2>Personal projects</h2>
+
+                <div class="project-grid">
+                <a class="project-card" href="https://ghosted.lostsignals.studio/" target="_blank" rel="noopener">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/ghosted-og.jpg" alt="Ghosted job application logbook interface." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>Ghosted (beta)</h3>
+                                <p class="meta">Lost Signals — 2026</p>
+                                <p class="desc">A simple job application logbook for job seekers.</p>
+                                <span class="card-link outbound">visit product</span>
+                            </div>
+                    
+                    </div>
+                </a>
+                <a class="project-card" href="https://kaja.lostsignals.studio/" target="_blank" rel="noopener">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/kaja-og.jpg" alt="Kaja landing page with the food tracker headline." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>Kaja</h3>
+                                <p class="meta">Lost Signals — 2026</p>
+                                <p class="desc">Neurodivergent friendly meal tracker with AI assistance.</p>
+                                <span class="card-link outbound">visit product</span>
+                            </div>
+                    
+                    </div>
+                </a>
+                <a class="project-card" href="https://jpg.krisztian.wtf/" target="_blank" rel="noopener">
+                    <div class="card-surface">
+                            <div class="card-media"><img src="images/keret-og.jpg" alt="Keret wordmark in a thick white frame over a wall of photographs." loading="lazy" /></div>
+                            <div class="card-body">
+                                <h3>Keret</h3>
+                                <p class="meta">Lost Signals — 2026</p>
+                                <p class="desc">A simple GitHub Pages-hosted photo gallery for amateur photographers.</p>
+                                <span class="card-link outbound">check demo</span>
+                            </div>
+                    
+                    </div>
+                </a>
+                </div>
             </section>
 
             <section id="contact">
-                <h2>&not; Interested in working together? &#x25AB;&#x25AA;&#x25AB;</h2>
+                <h2>Interested in working together?</h2>
                 <p>Drop a line to the <a href="#" role="button" onclick="copyToClipboard('&#104;&#101;&#121;&#064;&#107;&#114;&#105;&#115;&#122;&#116;&#105;&#097;&#110;&#046;&#119;&#116;&#102;'); return false;">&#104;&#101;&#121;&#064;&#107;&#114;&#105;&#115;&#122;&#116;&#105;&#097;&#110;&#046;&#119;&#116;&#102;</a> inbox and let's have a chat.</p>
-                <p>If you are into HR stuff, you can read <a href="/resume">my résumé</a> <i>(oh là là)</i>, or you can check me on <a class="outbound" href="https://www.linkedin.com/in/krisztianhadi/" target="_blank">LinkedIn</a></p>
+                <p>If you are into HR stuff, you can read <a href="/cv">my curriculum vitae</a> <i>(oh là là)</i>, or you can check me on <a class="outbound" href="https://www.linkedin.com/in/krisztianhadi/" target="_blank">LinkedIn</a></p>
 
             </section>
             <footer aria-hidden="true">

@@ -1,0 +1,6 @@
+# The CV downloads carry a phone number and an email in plain text, so keep them
+# out of search indexes. Note this only stops crawling/indexing - the files stay
+# publicly reachable by URL.
+User-agent: *
+Disallow: /krisztian-hadi-product-designer-2026.pdf
+Disallow: /krisztian-hadi-product-designer-2026.docx

@@ -1,8 +1,129 @@
 /* ============================================
+   FONTS - self-hosted, no third party requests.
+   JetBrains Mono is the active face; IBM Plex Mono is kept declared so
+   switching back is a one-line change in the font stack below.
+   ============================================ */
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-400-italic-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-400-normal-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-400-normal-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-700-normal-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/jetbrains-mono-700-normal-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-italic-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-normal-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-400-normal-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-700-normal-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-700-normal-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ============================================
    THEMES
    ============================================ */
 
 :root {
+  /* Layout */
+  --page-max: 800px;
+  --radius: 2px;
+  /* distance between sections, and therefore from the header to a page's first
+     line - they are deliberately the same */
+  --section-gap: 3rem;
+  --header-h: 3.5rem;
+  --header-top: 1rem;
+
+  /* rule beside the CV lines - currently a dimmed muted, between the
+     full muted and the dark card surface */
+  --cv-rule: color-mix(in srgb, var(--muted) 55%, transparent);
+
+  /* Project card surface: a darker step off the page background */
+  --card-bg: color-mix(in srgb, var(--bg) 72%, black);
+  --card-fg: var(--text);
+  --card-muted: var(--muted);
+
+  /* Inverse surfaces - the header bar */
+  --inverse-bg: white;
+  --inverse-fg: darkslateblue;
+  --inverse-muted: color-mix(in srgb, darkslateblue 55%, white);
+  --inverse-border: color-mix(in srgb, darkslateblue 30%, white);
+
   /* Base palette - lostsignals default */
   --bg: darkslateblue;
   --text: aliceblue;
@@ -46,6 +167,9 @@ body.theme-camsite {
   --code-number: #f0d4b0;
   --code-function: #e8789a;
   --code-class: #d4a8c9;
+  /* header bar follows the page theme instead of the default white */
+  --inverse-bg: var(--text);
+  --inverse-fg: var(--bg);
 }
 
 /* Warface Theme */
@@ -67,6 +191,9 @@ body.theme-warface {
   --code-number: #e0d4a0;
   --code-function: #d2a13c;
   --code-class: #a8b87a;
+  /* header bar follows the page theme instead of the default white */
+  --inverse-bg: var(--text);
+  --inverse-fg: var(--bg);
 }
 
 /* LastPass Theme */
@@ -91,6 +218,9 @@ body.theme-lastpass {
   --code-number: #d4a0a0;
   --code-function: #e05252;
   --code-class: #c9a0a0;
+  /* header bar follows the page theme instead of the default white */
+  --inverse-bg: var(--text);
+  --inverse-fg: var(--bg);
 }
 
 /* ============================================
@@ -109,6 +239,8 @@ body.theme-lastpass {
 
 html {
   font-size: 100%;
+  /* keep #anchors clear of the fixed header */
+  scroll-padding-top: calc(var(--header-top) + var(--header-h) + 0.5rem);
 }
 
 /* View transitions between pages */
@@ -119,10 +251,10 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
+  padding-top: calc(var(--header-top) + var(--header-h) + 0.5rem);
   font-family:
-    ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Droid Sans Mono", "Courier New", monospace;
+    "JetBrains Mono", "IBM Plex Mono", ui-monospace, Menlo, Monaco,
+    "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
@@ -181,8 +313,20 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-h1 {
+h1,
+h2 {
   text-transform: uppercase;
+}
+
+/* Section headings sit further from what came before than from their own
+   content, so a heading binds to the block it introduces. Exceptions keep their
+   margin-top: 0 - the first heading on a page (see main > :first-child), the
+   home greeting (.hero h2) and the CV job title (.intro h1 + h2). */
+h2 {
+  margin-top: var(--section-gap);
+}
+
+h1 {
   margin-bottom: 0.1rem;
   font-size: 2.2rem;
 }
@@ -205,10 +349,44 @@ blockquote {
   padding-left: 1em;
 }
 
-hr {
-  color: var(--muted);
-  margin: 3rem 0 1.5rem;
-  opacity: 0.5;
+/* Resume lines: an accent rule instead of bullets, so an entry reads as a block
+   rather than one wall of text. Work / side project / education entries get ONE
+   rule spanning the whole entry (the .items wrapper), the skill lists keep one
+   rule per line. The rule colour is --cv-rule and the text keeps full
+   strength for readability. */
+main.cv .item,
+main.cv .items {
+  border-left: 3px solid var(--cv-rule);
+  color: var(--text);
+  padding-left: 1em;
+}
+
+main.cv .item {
+  margin: 0.8rem 0;
+}
+
+main.cv .items {
+  margin: 0.8rem 0;
+}
+
+/* inside a group the rule lives on the wrapper, not on every line */
+main.cv .items > .item {
+  border-left: 0;
+  margin: 0.8rem 0;
+  padding-left: 0;
+}
+
+main.cv .items > .item:first-child {
+  margin-top: 0;
+}
+
+main.cv .items > .item:last-child {
+  margin-bottom: 0;
+}
+
+/* contact details are metadata, not achievements: plain stacked lines */
+main.cv .contact-lines p {
+  margin: 0.35rem 0;
 }
 
 /* ============================================
@@ -222,11 +400,15 @@ a {
 a:hover,
 a:focus-visible {
   background-color: var(--link);
-  border-radius: 0.1rem;
+  border-radius: var(--radius);
   color: var(--bg);
-  margin: 0 -0.25em;
+  /* the fill is padded wider on the sides than top/bottom; the negative margins
+     pay the padding back exactly, so the text never moves */
+  /* wider on the sides than top/bottom: 0.25em each way looked cramped
+     horizontally once the fill became symmetric */
+  margin: -0.25em -0.4em;
   outline: none;
-  padding: 0.15em 0.25em;
+  padding: 0.25em 0.4em;
 }
 
 /* Outbound link icon */
@@ -235,7 +417,9 @@ a:focus-visible {
   content: "";
   display: inline-block;
   height: 0.8em;
-  margin-left: 0.2em;
+  /* one character space (JetBrains Mono is 0.6em wide), so the icon sits as far
+     from the label as the "->" arrow does on the internal card links */
+  margin-left: 0.6em;
   width: 0.8em;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") no-repeat center/contain;
@@ -247,7 +431,7 @@ a:focus-visible {
 
 code {
   background: var(--code-bg);
-  border-radius: 0.4rem;
+  border-radius: var(--radius);
   color: var(--code-text);
   display: inline-block;
   font-size: 0.9em;
@@ -256,7 +440,7 @@ code {
 
 .code-block {
   background: var(--code-bg);
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-size: 0.85em;
   line-height: 1.6;
   margin: 1rem 0;
@@ -294,14 +478,14 @@ code {
 
 img {
   border: 1px solid var(--muted);
-  border-radius: 0.2rem;
+  border-radius: var(--radius);
   margin: 2rem 0;
   padding: 0.2rem;
 }
 
 .img-cv {
   border-radius: 50%;
-  max-width: 18rem;
+  max-width: 20rem;
   margin: 0;
 }
 
@@ -329,7 +513,7 @@ img + .caption,
   background-image: url(images/aniko-laci.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 0.2rem;
+  border-radius: var(--radius);
   content: "";
   display: block;
   inset: calc(0.2rem + 1px);
@@ -344,13 +528,46 @@ wrapper {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-top) - var(--header-h) - 0.5rem);
+  /* Gutters live here, not on main: a width:100% item plus horizontal margins
+     overflows the viewport when the window is exactly --page-max wide. */
+  padding: 0 clamp(1rem, 4vw, 2rem);
   width: 100%;
 }
 
 main {
-  margin: 2rem 1rem;
-  max-width: 640px;
+  margin: 1rem 0;
+  max-width: var(--page-max);
+  width: 100%;
+}
+
+/* Whatever a page opens with, it starts at the same distance from the header:
+   heading and paragraph top margins are for spacing inside the content, not for
+   the first thing on the page. The second selector covers the pages that open
+   with an invisible sr-only h1, where the real first heading sits one level in -
+   without it `section:first-of-type` also matched case-study pages (whose first
+   section is a content section, not the page opening) and killed the Summary
+   heading's margin. */
+/* The first line of a page sits as far below the header as a section heading sits
+   below the content before it: 48px of white above the caps. The body padding-top
+   and main's own margin already provide 24px of that, so the opening element adds
+   the other 24px. (Measured by scanning the first ink row under the bar: a section
+   heading shows 48px box gap + 7px cap leading = 55px of white.) */
+main > :first-child,
+main > .sr-only:first-child + section > :first-child {
+  margin-top: 1.5rem;
+}
+
+/* Type size changes how much leading sits above the caps, so the ink landed 4px
+   lower on the 35px h1 openings and 3px higher on the CV's 16px first row. These
+   offsets cancel that, so the first line sits at one distance on every page. */
+main > h1:first-child,
+main > .sr-only:first-child + section > h1:first-child {
+  margin-top: calc(1.5rem - 4px);
+}
+
+main.cv .intro .page-nav {
+  margin-top: 3px;
 }
 
 .row {
@@ -363,6 +580,295 @@ main {
   flex-direction: column;
 }
 
+/* ============================================
+   SITE HEADER (fixed, every page)
+   ============================================ */
+
+/* Full-width fixed strip whose gutters match wrapper, so .header-inner lines
+   up exactly with main (same --page-max, same clamp padding). */
+.site-header {
+  left: 0;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  position: fixed;
+  right: 0;
+  top: var(--header-top);
+  z-index: 100;
+}
+
+.header-inner {
+  align-items: center;
+  position: relative;
+  background: var(--inverse-bg);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 1rem;
+  height: var(--header-h);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--page-max);
+  padding: 0 1rem;
+}
+
+.site-header a {
+  color: var(--inverse-fg);
+}
+
+.site-header .brand {
+  color: var(--inverse-fg);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  /* no inherited paragraph margins - they pushed the name 4px below the menu */
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.site-header .brand:is(:hover, :focus-visible) {
+  background: none;
+  color: var(--inverse-fg);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Menu and card links share one treatment. The hover keeps the site's
+   fill-the-link look but pays the padding back with negative margins, so
+   nothing shifts while hovering. */
+.site-header a,
+.site-header a {
+  color: var(--inverse-fg);
+}
+
+.site-header a:is(:hover, :focus-visible) {
+  background-color: var(--inverse-fg);
+  border-radius: var(--radius);
+  color: var(--inverse-bg);
+  /* wider on the sides than top/bottom: 0.25em each way looked cramped
+     horizontally once the fill became symmetric */
+  margin: -0.25em -0.4em;
+  outline: none;
+  padding: 0.25em 0.4em;
+}
+
+.site-nav {
+  display: flex;
+  gap: clamp(0.8rem, 2vw, 1.75rem);
+}
+
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+/* Small screens: the name plus three menu items have to stay inside the bar */
+/* Heading kept for search engines and screen readers, invisible on screen */
+.sr-only {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Hamburger - replaces the inline menu on small screens */
+.menu-toggle {
+  background: none;
+  border: 0;
+  color: var(--inverse-fg);
+  cursor: pointer;
+  display: none;
+  font-family: inherit;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 0 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    background: var(--inverse-bg);
+    border-radius: var(--radius);
+    display: none;
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: 9rem;
+    padding: 0.7rem 0.85rem;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.35rem);
+    z-index: 10;
+  }
+
+  .site-header.menu-open .site-nav {
+    display: flex;
+  }
+}
+
+/* ============================================
+   HERO (home)
+   ============================================ */
+
+.hero {
+  margin-bottom: 1rem;
+}
+
+/* the greeting is the page's h1 now: 35px caps carry 4px more leading than the
+   24px it replaces, so it takes the same compensation as the other h1 openings */
+.hero h1 {
+  margin-top: -4px;
+}
+
+/* Photo lives on /about now */
+.about-photo {
+  margin: 1.5rem 0 2.5rem;
+}
+
+/* ============================================
+   PROJECT BLOCKS (home)
+   ============================================ */
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 2rem 0 1.5rem;
+}
+
+/* The card is a permanent frame, built like the case study images: a real 1px
+   border with a 0.2rem gutter inside it. The gutter is never painted, so it
+   shows the page background; at rest the border is the card's own dark colour
+   and on hover it turns light. */
+.project-card {
+  background: transparent;
+  border: 1px solid var(--card-bg);
+  border-radius: var(--radius);
+  display: block;
+  /* the whole card is one link - no underlined block */
+  text-decoration: none;
+  padding: 0.2rem;
+  transition: border-color 0.2s ease;
+}
+
+/* the dark surface inside the gutter */
+.card-surface {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  color: var(--card-fg);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+  align-items: center;
+  padding: 1rem;
+}
+
+/* The card is an <a>, so the global a:hover rule both repaints the surface and
+   replaces its padding (16px -> 2.4px), which yanked every card below it up.
+   Re-assert the card's own surface and box on hover. */
+a.project-card:is(:hover, :focus-visible) {
+  background-color: transparent;
+  border-color: var(--muted);
+  color: var(--card-fg);
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.project-card .card-media {
+  transition: background 0.2s ease;
+}
+
+a.project-card:is(:hover, :focus-visible) .card-media {
+  background: color-mix(in srgb, var(--card-fg) 16%, transparent);
+}
+
+/* the read more label takes the site's link-hover fill when the card is hovered */
+a.project-card:is(:hover, :focus-visible) .card-link {
+  background-color: var(--card-fg);
+  border-radius: var(--radius);
+  color: var(--card-bg);
+  margin: -0.25em -0.4em;
+  padding: 0.25em 0.4em;
+}
+
+/* keyboard focus sits further out and brighter, so it never reads as hover */
+a.project-card:focus-visible {
+  outline: 2px solid var(--card-fg);
+  outline-offset: 3px;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* Placeholder box - swap the inner span for an <img> when the shot is ready */
+.card-media {
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background: color-mix(in srgb, var(--card-fg) 8%, transparent);
+  border-radius: var(--radius);
+  color: var(--card-muted);
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-media img {
+  border: 0;
+  border-radius: var(--radius);
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  padding: 0;
+  width: 100%;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  text-transform: none;
+}
+
+.project-card .meta {
+  color: var(--card-muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.project-card .desc {
+  margin: 0.4rem 0 0.8rem;
+}
+
+.project-card .card-link {
+  align-self: flex-start;
+  font-size: 0.9rem;
+}
+
+/* Cards stack: image beside the text on desktop, above it on mobile */
+@media (max-width: 720px) {
+  .card-surface {
+    align-items: start;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.nsfw-note {
+  border-left: 3px solid var(--link);
+  color: var(--muted);
+  margin: 2.5rem 0 0;
+  padding-left: 1em;
+}
+
+/* ============================================
+   PAGE NAV
+   ============================================ */
+
 .page-nav {
   align-items: baseline;
   display: flex;
@@ -373,21 +879,18 @@ main {
   white-space: nowrap;
 }
 
-.page-nav a:hover,
-.page-nav a:focus-visible {
-  margin: -0.15em -0.25em;
+/* the download links sit at the top of the CV intro */
+main.cv .intro .page-nav {
+  margin-bottom: 1.5rem;
 }
 
-section:first-of-type .page-nav {
-  border-bottom: 1px dashed var(--muted);
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-}
-
+/* Case study / CV footer nav: dotted filler between the two links, and enough
+   room underneath that the links are not jammed against the bottom edge - the
+   pages ending in a footer divider have ~48px there. */
 section:last-of-type .page-nav {
-  border-top: 1px dashed var(--muted);
+  align-items: center;
+  margin-bottom: 2rem;
   margin-top: 2rem;
-  padding-top: 1.5rem;
 }
 
 /* ============================================
@@ -402,13 +905,17 @@ footer {
   margin: 3rem 0 2rem;
 }
 
-footer .dot-fill {
+.dot-fill {
   background-image: radial-gradient(circle, currentColor 0.1em, transparent 0.1em);
   background-position: center;
   background-size: 1em 1em;
   flex: 1;
   height: 1em;
   opacity: 0.5;
+}
+
+.page-nav .dot-fill {
+  margin: 0 1rem;
 }
 
 footer .heart {
@@ -423,7 +930,7 @@ footer .heart {
   background-color: #26804e;
   width: auto;
   min-width: 15rem;
-  border-radius: 1rem;
+  border-radius: var(--radius);
   bottom: 2rem;
   color: aliceblue;
   left: 50%;
@@ -444,56 +951,95 @@ footer .heart {
 }
 
 /* ============================================
-   RESUME (resume.html)
+   CV (cv.html)
    ============================================ */
 
-main.resume h1,
-main.resume h2 {
+main.cv h1 {
+  /* the name is the page title, not a section: no heading margins */
   margin: 0;
 }
 
-main.resume h3 {
+/* CV entries read company / position / date @ location; the company is a
+   heading now, so the entry block under it stays tight and only the gap between
+   entries stays roomy */
+main.cv h3.org,
+/* competency labels are headings too, with the skills ruled off below them; the
+   gap under them matches the one after a work experience header block */
+main.cv h3.label {
+  line-height: 1.15;
+  margin-bottom: 0;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
 
-main.resume .role {
+main.cv h3.org + p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* the CV's sections are h2 now; keep the roomier section rhythm it had */
+main.cv h2 {
+  margin-bottom: 1.5rem;
+  margin-top: var(--section-gap);
+}
+
+main.cv .role {
   color: var(--muted);
   font-style: italic;
 }
 
-main.resume .intro ul {
-  margin: 0;
-} 
-
-main.resume .intro h3 {
+/* Inside the intro the headings are not sections: the contact list hugs its
+   heading, and the name + job title read as one block. */
+main.cv .intro h2 {
   margin-bottom: 0;
 }
 
-/* Intro grid: text in col 1, circular photo in col 2 (desktop) */
-main.resume .intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 18rem;
-  grid-template-rows: auto auto auto auto;
+main.cv .intro h1 + h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  /* the job title wraps into two evenly balanced lines instead of one long one */
+  text-wrap: balance;
 }
 
-main.resume .intro .img-cv {
+/* Intro grid: text in col 1, circular photo in col 2 (desktop) */
+main.cv .intro {
+  /* align-items start: grid items must keep their content height, otherwise they
+     stretch to fill the rows the photo's height forces open */
+  align-items: start;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20rem;
+  /* five rows: downloads, name, title, contact heading, contact lines. The photo
+     spans rows 2..-1, and -1 only reaches the last EXPLICIT row - with four rows
+     declared it was squeezed into rows 2-4 and force-grew them to its own height. */
+  grid-template-rows: repeat(5, auto);
+}
+
+/* the download links are the intro's first row; every text item stays in the
+   left column (otherwise auto-placement drops one next to the photo), and the
+   photo runs from the name down to the bottom of the block, so both columns
+   line up at the top and at the bottom */
+main.cv .intro > :not(.img-cv) {
+  grid-column: 1;
+}
+
+main.cv .intro .img-cv {
   align-self: start;
   aspect-ratio: 1 / 1;
   grid-column: 2;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   object-fit: cover;
   width: 100%;
 }
 
 /* Below 620px: single column, photo full-width at its natural aspect ratio */
 @media (max-width: 620px) {
-  main.resume .intro {
+  main.cv .intro {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  main.resume .intro .img-cv {
+  main.cv .intro .img-cv {
     aspect-ratio: auto;
-    border-radius: 0.2rem;
+    border-radius: var(--radius);
     grid-column: auto;
     grid-row: auto;
     margin-top: 1.5rem;
@@ -502,7 +1048,7 @@ main.resume .intro .img-cv {
   }
 }
 
-main.resume .dl-links {
+main.cv .dl-links {
   display: inline-flex;
   gap: 1.5rem;
 }
@@ -515,9 +1061,188 @@ main.resume .dl-links {
 }
 
 @media print {
-  main.resume .page-nav {
+  main.cv .page-nav {
     display: none;
   }
+
+  .site-header {
+    display: none;
+  }
+
+  body {
+    padding-top: 0;
+  }
+}
+
+/* ============================================
+   NSFW PAGE - dark grey with pink accents, masonry gallery
+   ============================================ */
+
+body.theme-nsfw {
+  --bg: #17171a;
+  --text: #f4f4f6;
+  --muted: #a8a2ae;
+  --link: #ff4d94;
+  --code-bg: #202024;
+  --inverse-bg: var(--text);
+  --inverse-fg: var(--bg);
+}
+
+.nsfw-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.nsfw-project .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* CSS columns give the masonry flow without any JS. column-width sets the
+   minimum, so the shared 800px canvas yields two columns on desktop, one on a
+   phone - no page-specific width override. */
+.nsfw-grid {
+  column-gap: 1rem;
+  columns: 300px;
+  margin: 1.5rem 0 0;
+}
+
+/* Same construction as the project cards: a permanent 1px frame with a 0.2rem
+   gutter, and the image as the surface inside it. A button, not a link, so the
+   global link hover fill cannot paint behind the artwork. */
+.nsfw-shot {
+  background: var(--code-bg);
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+  break-inside: avoid;
+  cursor: zoom-in;
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+/* Full height, no cropping: the masonry is what makes mixed ratios work, and the
+   lightbox is there for reading the long captures up close. */
+.nsfw-shot img {
+  border: 0;
+  border-radius: var(--radius);
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nsfw-shot:is(:hover, :focus-visible) {
+  border-color: var(--link);
+}
+
+/* lightbox: covers the whole viewport, frosted over the page behind it, with the
+   controls parked in the corners and the image scrolling in the middle */
+.lightbox {
+  background: rgb(12 12 14 / 0.68);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  border: 0;
+  color: var(--text);
+  height: 100vh;
+  height: 100dvh;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  padding: 0;
+  width: 100vw;
+}
+
+.lightbox::backdrop {
+  background: rgb(0 0 0 / 0.55);
+}
+
+.lightbox-stage {
+  display: flex;
+  height: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 4.5rem 5rem;
+}
+
+/* margin:auto, not align-items:center - centring via flex alignment makes the top
+   and bottom of an oversized image unreachable, auto margins stay scrollable.
+   flex:0 0 auto stops the flex layout shrinking a tall capture. */
+.lightbox-stage img {
+  border: 0;
+  display: block;
+  flex: 0 0 auto;
+  height: auto;
+  margin: auto;
+  max-height: none;
+  max-width: none;
+  padding: 0;
+  width: min(1400px, 78vw);
+}
+
+.lightbox button {
+  background: rgb(23 23 26 / 0.72);
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.7rem;
+  position: fixed;
+}
+
+.lightbox button:is(:hover, :focus-visible) {
+  border-color: var(--link);
+  color: var(--link);
+}
+
+.lightbox button:disabled {
+  cursor: default;
+  opacity: 0.35;
+}
+
+.lightbox-close {
+  right: 1.25rem;
+  top: 1.25rem;
+}
+
+/* arrows sit vertically centred on the sides; counter top-left, close top-right */
+.lightbox-prev {
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  left: 1.25rem;
+  position: fixed;
+  top: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .lightbox-stage {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .lightbox-stage img {
+    width: min(1400px, 94vw);
+  }
+}
+
+body.lightbox-open {
+  overflow: hidden;
 }
 
 /* ============================================
@@ -533,7 +1258,7 @@ main.resume .dl-links {
     margin: 2cm;
   }
 
-  main.resume {
+  main.cv {
     margin: 0;
   }
 
@@ -548,13 +1273,8 @@ main.resume .dl-links {
     text-decoration: none;
   }
 
-  main.resume .role {
+  main.cv .role {
     color: #444;
-  }
-
-  hr {
-    color: #999;
-    opacity: 1;
   }
 
   p,
