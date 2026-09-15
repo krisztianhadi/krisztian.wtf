@@ -40,9 +40,10 @@ live line.
 
 ## Notes
 
-- Built by hand and with AI. The design and copy decisions are mine; a large
-  part of the implementation, refactoring and verification was done with AI
-  assistance, and saying so plainly beats pretending otherwise.
+- Built by hand and with AI. The design and copy decisions are mine; the
+  implementation, refactoring and verification were done with AI assistance —
+  mostly DeepSeek V4.1 Flash running in DeepSeek Harness. Naming the tools
+  beats pretending otherwise.
 - `/cv` and `/nsfw/` are `noindex`, and `robots.txt` asks crawlers to skip the
   CV downloads.
 - The copy follows a personal writing guide that is deliberately not part of
