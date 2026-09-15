@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <title>LastPass x a11y — Krisztián Hadi</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Case study: overseeing an extensive accessibility overhaul at LastPass, pushing the platform's a11y rating up by more than 40%." />
+    <meta name="description" content="Case study: an extensive accessibility overhaul at LastPass — pushing the platform's a11y rating up by 14%, from ~69% to ~83%." />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="favicon.png">
 
@@ -49,20 +49,21 @@
 
             <section>
                 <h2>Summary</h2>
-                <p>I had the chance to oversee an extensive accessibility overhaul at LastPassas the UX designer of a fast-reacting team. Together with a development team of five, we tackled a long list of accessibility violations and pushed the platform's a11y rating up by 14%. The update went live on the 10th Global Accessibility Awareness Day.</p>
+                <p>I got to oversee an extensive accessibility overhaul at LastPass, as the UX designer on a team that moved fast. Together with five developers, we worked through a long list of accessibility violations and pushed the platform's a11y rating up by 14%. The update went live on the 10th Global Accessibility Awareness Day.</p>
             </section>
 
             <section>
                 <h2>Goal</h2>
-                <p>To help our sales team expand LastPass' clientele — especially in more regulated sectors like banking and insurance — we needed to improve the app's mediocre accessibility rating across the web/desktop app and browser extension producing a more than acceptable VPAT report.</p>
+                <p>Our sales team wanted LastPass in more regulated sectors — banking, insurance. Those buyers have a hard bar: the VPAT has to land at 80% or better. So that meant fixing the app's mediocre accessibility rating across the web app, the desktop app, and the browser extension — and coming out with a VPAT report we could actually hand over.</p>
             </section>
 
             <section>
                 <h2>Outcome</h2>
-                <p>Over two months of intensive front-end refactoring, we successfully pushed the a11y rating from ~69% to ~83% — a huge win for the user base. In real-world terms, the app became fully usable with assistive technologies.</p>
+                <p>Worth remembering what we inherited: keyboard navigation and screen reader support were close to non-existent. Where that initial ~69% rating even came from, we never fully worked out — we just did our best with the time we had.</p>
+                <p>Two months of intensive front-end refactoring pushed the a11y rating up to ~83% — a huge win for the user base. In real-world terms, the app became fully usable with assistive technologies.</p>
                 <p>This included full keyboard navigation, fully valid ARIA announcements, and the ever-popular classic: "every button became a real button" change.</p>
-                <p>And the real bonus? An Axe test became part of the E2E testing suiteafter our project.</p>
-                <p>For my enthusiasm and pushing the dev team to its limits (sorry guys for being a pain in the ass!),I was promoted into GoTo's<sup>*</sup> Accessibility Champion program, where I joined other champions in advocating a11y standards across the organization.</p>
+                <p>And the real bonus? An Axe test became part of the E2E testing suite after our project.</p>
+                <p>For my enthusiasm, and for pushing the dev team to its limits (sorry guys, I was a pain in the ass!), I got promoted into GoTo's<sup>*</sup> Accessibility Champion program. There I joined the other champions advocating a11y standards across the organization.</p>
                 <p><small><em><sup>*</sup> GoTo, formerly LogMeIn, was the parent company of LastPass at that time.</em></small></p>
             </section>
 
@@ -83,7 +84,7 @@
                     </div>
                 </div>
                 <p>Just because something can be clicked doesn't mean it's a valid navigation element — and most assistive technology treats it that way. These "fake" buttons and links are either nonexistent to screen readers or reduced to plain text.</p>
-                <p>Always pay attention to using the appropriate element for every UI block in your website or app. Most compatibility issues are fully covered by following valid code schematics.</p>
+                <p>Use the right element for every block of UI. Follow valid code schematics and most compatibility issues never come up.</p>
                 <p>It's shocking how many people assume everyone has full sensory and fine-motor function, but in reality, accessibility issues affect more people than you'd expect. And a11y features aren't just about inclusivity; they also make your software more efficient for your power users.</p>
             </section>
 
