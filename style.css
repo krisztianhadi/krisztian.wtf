@@ -674,6 +674,7 @@ main.cv .intro .page-nav {
 
 /* Hamburger - replaces the inline menu on small screens */
 .menu-toggle {
+  align-items: center;
   background: none;
   border: 0;
   color: var(--inverse-fg);
@@ -681,8 +682,18 @@ main.cv .intro .page-nav {
   display: none;
   font-family: inherit;
   font-size: 1.35rem;
+  height: 44px;
+  justify-content: center;
   line-height: 1;
-  padding: 0 0.15rem;
+  /* Touch target: 44x44 (WCAG 2.5.8 asks for 24x24, platforms for 44).
+     The box is grown around the glyph and pulled back by the same amount, so
+     the icon stays exactly where it was and the header layout is untouched:
+     -11.2px = (21.6px - 44px) / 2 and -13.1px = (17.8px - 44px) / 2, the old
+     box being the 13px glyph plus 0.15rem padding at font-size 1.35rem. */
+  margin: -11.2px -13.1px;
+  padding: 0;
+  touch-action: manipulation;
+  width: 44px;
 }
 
 @media (max-width: 600px) {
