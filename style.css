@@ -384,6 +384,14 @@ main.cv .items > .item:last-child {
   margin-bottom: 0;
 }
 
+/* Core Competencies read as running text rather than a quotation: no accent
+   rule, no indent, set in italic. The label headings above them stay put. */
+main.cv .competencies .item {
+  border-left: 0;
+  font-style: italic;
+  padding-left: 0;
+}
+
 /* contact details are metadata, not achievements: plain stacked lines */
 main.cv .contact-lines p {
   margin: 0.35rem 0;
