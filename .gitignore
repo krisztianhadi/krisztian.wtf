@@ -10,6 +10,3 @@
 
 # local CV scratch (served copies live at repo root)
 /docs/
-
-# WRITING_STYLE.md is tracked on purpose: it lives in the repo but is kept off
-# the published site by the exclude list in _config.yml.
